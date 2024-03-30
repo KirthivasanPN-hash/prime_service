@@ -36,7 +36,3 @@ jobs:
           docker build -t ghcr.io/kirthivasanpn-hash/primes-service:latest --file Dockerfile .  
           docker push ghcr.io/kirthivasanpn-hash/primes-service:latest
           
-
-#  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
-
-#  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
