@@ -45,18 +45,18 @@ services:
       - STORAGE_ACCESS_KEY= "key"
     restart: "no"
 
-    quotation-service:
-     image: quotation-service
-     build:
-        context: ../quotation-service
-        dockerfile: Dockerfile
-     container_name: quotation-service
-     ports:
-        - "4004:3004"
-     environment:
-        - PORT=3004
-        - FILE_STORAGE_HOST=azure-storage
-        - FILE_STORAGE_PORT=3001
-        - DBHOST=mongodb://admin:password@mongo-database:27017
-        - DBNAME=quotations-db
-     restart: "always"       
+#    quotation-service:
+#     image: quotation-service
+#     build:
+#        context: ../quotation-service
+#        dockerfile: Dockerfile
+#     container_name: quotation-service
+#     ports:
+#        - "4004:3004"
+#     environment:
+#        - PORT=3004
+#        - FILE_STORAGE_HOST=azure-storage
+#        - FILE_STORAGE_PORT=3001
+#        - DBHOST=mongodb://admin:password@mongo-database:27017
+#        - DBNAME=quotations-db
+#     restart: "always"
